@@ -1,0 +1,48 @@
+
+ body {
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+ .container{
+    width: 25em;
+    height: 25em;
+    display: grid;
+    grid-template-columns: repeat(3 ,auto); /*How many columns will it be divided into?*/
+    grid-template-rows: repeat(3 ,0fr); /*How many rows will it be divided into?*/
+    /*grid-template-columns: auto auto auto;  do same thing*/
+    justify-content: center;
+    align-content: center;
+}
+.cell{
+     border: 2px solid black;
+     width:150px;
+     height: 150px;
+     font-size: 4rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+#cell1,#cell2,#cell3{ /*.cell:nth-cild(1) same think*/
+    border-top: none;
+} 
+#cell7,#cell8,#cell9{
+    border-bottom: none;
+} 
+#cell1,#cell4,#cell7{
+    border-left: none;
+} 
+#cell3,#cell6,#cell9{
+    border-right: none;
+} 
+
+h2{
+    border: 1px solid black;
+    text-align: center; 
+}
